@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShieldCheck, Award, Layers, Compass, CheckCircle2, FileCheck } from 'lucide-react';
+import concreteCraftImage from '../assets/images/craft_materials_concrete_1792929390805.jpg';
 
 export const EngineeringCraft: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'concrete' | 'steel' | 'geotech' | 'glazing'>('concrete');
@@ -77,7 +78,7 @@ export const EngineeringCraft: React.FC = () => {
         {/* Left: Real High-Res Macro Image */}
         <div className="lg:col-span-5 relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl min-h-[380px]">
           <img
-            src="/src/assets/images/craft_materials_concrete_1792929390805.jpg"
+            src={concreteCraftImage}
             alt="Board formed concrete and structural steel joinery by JENGA"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover"

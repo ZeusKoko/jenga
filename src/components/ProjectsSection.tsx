@@ -2,6 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { ProjectItem, Currency } from '../types';
 import { ProjectDetailModal } from './ProjectDetailModal';
 import { ArrowUpRight, ChevronLeft, ChevronRight, Play, Pause, Layers } from 'lucide-react';
+import karenVillaImage from '../assets/images/project_karen_villa_1792929285613.jpg';
+import livingPavilionImage from '../assets/images/karen_villa_living_pavilion_1792930361343.jpg';
+import masterSuiteImage from '../assets/images/karen_villa_master_suite_1792930363120.jpg';
+import designerKitchenImage from '../assets/images/karen_villa_designer_kitchen_1792930363168.jpg';
+import sunkenLoungeImage from '../assets/images/karen_villa_sunken_lounge_1792930363693.jpg';
+import westlandsTowerImage from '../assets/images/project_westlands_tower_1792929285561.jpg';
+import kilimaniResidenceImage from '../assets/images/project_kilimani_residence_1792929390371.jpg';
+import industrialTerminalImage from '../assets/images/hero_jenga_architecture_1792929285580.jpg';
 
 interface ProjectsSectionProps {
   currency: Currency;
@@ -15,7 +23,7 @@ const VILLA_SLIDES = [
     title: 'Cantilever Facade & Reflection Pool',
     category: 'Exterior Architecture',
     caption: '6.2m post-tensioned cantilever slab floating above basalt terrace and infinity lap pool.',
-    image: '/src/assets/images/project_karen_villa_1792929285613.jpg',
+    image: karenVillaImage,
   },
   {
     id: 'living-pavilion',
@@ -23,7 +31,7 @@ const VILLA_SLIDES = [
     title: 'Living Pavilion & Forest Panorama',
     category: 'Interior Great Room',
     caption: 'Floor-to-ceiling frameless glass sliders opening directly into ancient Karen Acacia groves.',
-    image: '/src/assets/images/karen_villa_living_pavilion_1792930361343.jpg',
+    image: livingPavilionImage,
   },
   {
     id: 'master-suite',
@@ -31,7 +39,7 @@ const VILLA_SLIDES = [
     title: 'Cantilevered Master Suite',
     category: 'Private Residence Wing',
     caption: 'Panoramic glass corner terrace suspended over the canopy with acoustic decoupled slab.',
-    image: '/src/assets/images/karen_villa_master_suite_1792930363120.jpg',
+    image: masterSuiteImage,
   },
   {
     id: 'designer-kitchen',
@@ -39,7 +47,7 @@ const VILLA_SLIDES = [
     title: 'Gourmet Basalt Waterfall Kitchen',
     category: 'Culinary Architecture',
     caption: 'Monolithic honed black basalt island paired with fluted natural oak and courtyard glazing.',
-    image: '/src/assets/images/karen_villa_designer_kitchen_1792930363168.jpg',
+    image: designerKitchenImage,
   },
   {
     id: 'sunken-lounge',
@@ -47,7 +55,7 @@ const VILLA_SLIDES = [
     title: 'Sunken Fire Pit & Twilight Deck',
     category: 'Outdoor Entertaining',
     caption: 'Sub-level fire lounge with teak banquettes sheltered under the raw board-formed cantilever.',
-    image: '/src/assets/images/karen_villa_sunken_lounge_1792930363693.jpg',
+    image: sunkenLoungeImage,
   },
 ];
 
@@ -61,7 +69,7 @@ const PROJECTS_DATA: ProjectItem[] = [
     year: '2026',
     client: 'Private Family Office',
     description: 'An architectural tour de force set on two acres in Karen. Features a signature 6.2-meter post-tensioned concrete cantilever, frameless thermal curtain walls, integrated rainwater harvesting, and locally quarried basalt accents.',
-    image: '/src/assets/images/project_karen_villa_1792929285613.jpg',
+    image: karenVillaImage,
     ncaRating: 'NCA 1 Certified',
     structuralHighlight: '6.2m Cantilevered Post-Tensioned Slab with zero deflection under dynamic load.',
     concreteGrade: 'C35/45 Self-Compacting',
@@ -82,7 +90,7 @@ const PROJECTS_DATA: ProjectItem[] = [
     year: '2025',
     client: 'Pan-African Investment Trust',
     description: 'A 24-storey landmark corporate tower in the heart of Westlands. Built with a continuous slip-form shear wall core, high-efficiency aerodynamic brise-soleil, and seismic Grade IV Rift Valley stabilization.',
-    image: '/src/assets/images/project_westlands_tower_1792929285561.jpg',
+    image: westlandsTowerImage,
     ncaRating: 'NCA 1 Mega Project',
     structuralHighlight: 'Slip-form core erected at 1.8 vertical meters every 24 hours.',
     concreteGrade: 'C40/50 High-Strength Micro-Silica',
@@ -103,7 +111,7 @@ const PROJECTS_DATA: ProjectItem[] = [
     year: '2025',
     client: 'Urban Living Development Ltd',
     description: 'A 56-unit biophilic residential condominium featuring stepped landscaped terraces, handcrafted local terracotta shading louvers, and subterranean double-stack automated parking.',
-    image: '/src/assets/images/project_kilimani_residence_1792929390371.jpg',
+    image: kilimaniResidenceImage,
     ncaRating: 'NCA 1 Certified',
     structuralHighlight: 'Acoustic floating slab design reducing inter-floor reverberation to <38dB.',
     concreteGrade: 'C30/37 Volcanic Pozzolana Blend',
@@ -124,7 +132,7 @@ const PROJECTS_DATA: ProjectItem[] = [
     year: '2024',
     client: 'East Africa Freight Consortium',
     description: 'High-tolerance industrial logistics hub featuring 32-meter clear span steel portals, laser-screeded jointless FM2 superflat industrial flooring, and heavy vehicle turning aprons.',
-    image: '/src/assets/images/hero_jenga_architecture_1792929285580.jpg',
+    image: industrialTerminalImage,
     ncaRating: 'NCA 1 Certified',
     structuralHighlight: 'Superflat industrial floor slab with zero micro-cracking over 24,000 m².',
     concreteGrade: 'C35 Steel Fiber Reinforced',
