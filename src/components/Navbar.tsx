@@ -35,13 +35,17 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="flex items-center justify-between gap-6">
           
-          {/* Brand Logo with Original Yellow Architectural Bar */}
+          {/* Brand Logo with uploaded JENGA Logo */}
           <a
             href="#"
-            className="flex items-center gap-2.5 text-2xl font-black tracking-tight text-white whitespace-nowrap shrink-0 group select-none font-display"
+            className="flex items-center gap-2 whitespace-nowrap shrink-0 group select-none py-0.5"
+            aria-label="JENGA Home"
           >
-            <span className="w-2.5 h-6 bg-[#E5A93C] inline-block transition-transform group-hover:scale-y-110 rounded-xs" />
-            <span className="tracking-wider">JENGA</span>
+            <img
+              src="/assets/aistudio/jenga_logo_black_e7ec8d3d.svg"
+              alt="JENGA"
+              className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+            />
           </a>
 
           {/* Clean Navigation Links */}

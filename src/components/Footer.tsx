@@ -46,10 +46,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           
           {/* Brand & Address (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-2 text-2xl font-bold font-display text-white">
-              <span className="w-2.5 h-6 bg-[#E5A93C]" />
-              <span>JENGA</span>
-            </div>
+            <a href="#" className="inline-block py-1" aria-label="JENGA Home">
+              <img
+                src="/assets/aistudio/jenga_logo_black_e7ec8d3d.svg"
+                alt="JENGA"
+                className="h-14 sm:h-20 w-auto object-contain transition-transform duration-200 hover:scale-105"
+              />
+            </a>
             <p className="text-sm text-white/60 leading-relaxed">
               Master builders and structural engineers headquartered in Nairobi. Setting the standard for luxury residential villas, commercial high-rises, and industrial facilities across East Africa.
             </p>
