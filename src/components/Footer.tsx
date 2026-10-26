@@ -50,7 +50,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               <img
                 src="/assets/aistudio/jenga_logo_black_e7ec8d3d.svg"
                 alt="JENGA"
-                className="h-14 sm:h-20 w-auto object-contain transition-transform duration-200 hover:scale-105"
+                className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain transition-transform duration-200 hover:scale-105"
               />
             </a>
             <p className="text-sm text-white/60 leading-relaxed">

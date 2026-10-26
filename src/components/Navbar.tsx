@@ -38,13 +38,17 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Brand Logo with uploaded JENGA Logo */}
           <a
             href="#"
-            className="flex items-center gap-2 whitespace-nowrap shrink-0 group select-none py-0.5"
+            className="flex items-center gap-2 whitespace-nowrap shrink-0 group select-none py-1"
             aria-label="JENGA Home"
           >
             <img
               src="/assets/aistudio/jenga_logo_black_e7ec8d3d.svg"
               alt="JENGA"
-              className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              className={`${
+                isScrolled
+                  ? 'h-12 sm:h-14 md:h-16'
+                  : 'h-14 sm:h-18 md:h-22 lg:h-24'
+              } w-auto object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-md`}
             />
           </a>
 

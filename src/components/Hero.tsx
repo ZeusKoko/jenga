@@ -137,7 +137,7 @@ export const Hero: React.FC<HeroProps> = ({ currency, onOpenConsultation }) => {
   ];
 
   return (
-    <section className="relative min-h-[94vh] flex flex-col justify-between pt-24 sm:pt-28 pb-10 overflow-hidden bg-[#0B0F15]">
+    <section className="relative min-h-[94vh] flex flex-col justify-between pt-28 sm:pt-32 md:pt-36 pb-10 overflow-hidden bg-[#0B0F15]">
       
       {/* =========================================================================
           BACKGROUND LAYER (z-0 to ensure it is always visible behind content)
